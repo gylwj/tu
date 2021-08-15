@@ -5,6 +5,8 @@
 &&[文件类型]txt
 &&[作者QQ]3194703513
 &&[官方群]1039713957
+&&[微信公众]酿俗
+&&[更新时间]2021.8.15
 =◎=◎=◎小k◎=◎=◎=
 
 赞我.*
@@ -111,7 +113,7 @@ h:%%随机数1-9%%
 %%随机数1-8%%
 
 [内部]!小尾巴
-a:$读 官网www.gylwj.club/%群号%/尾巴 a 0あ$
+a:$读 官网www.imlwj.cn/%群号%/尾巴 a 0あ$
 如果:%a%==0あ
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 $访问 SETGET %访% http://laoliapi.cn/king/yiyan.php$
@@ -120,32 +122,32 @@ $访问 SETGET %访% http://laoliapi.cn/king/yiyan.php$
 %a%
 
 [内部]!调用中转站
-气:$读 官网www.gylwj.club/%群号%/$
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %QQ% 0$==1
-a:$读 官网www.gylwj.club/发言 %QQ% 0$
+气:$读 官网www.imlwj.cn/%群号%/$
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %QQ% 0$==1
+a:$读 官网www.imlwj.cn/发言 %QQ% 0$
 ±rep %Msgbar%±
 ±strmsg %a%±
 黑名人员已踢出！
 $踢 %群号% %QQ%$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/改名限制/%群号% %QQ% 0$==1
-n:$读 官网www.gylwj.club/锁名记录/%群号% %QQ% 0$
+如果:$读 官网www.imlwj.cn/改名限制/%群号% %QQ% 0$==1
+n:$读 官网www.imlwj.cn/锁名记录/%群号% %QQ% 0$
 如果:%昵称%!=%n%
 $改 %群号% %QQ% %n%$
 返回
 如果尾
 
 [内部]!撤回检测
-如果:$读 官网www.gylwj.club/%群号%/撤回开关 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/撤回开关 %QQ% 0$==1
 $撤回 %群号% %Msgbar%$
 返回
 如果尾
 
 [内部]!非主人
 a:$回调 !K科技$
-言:$读 官网www.gylwj.club/发言 %QQ% 0$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+言:$读 官网www.imlwj.cn/发言 %QQ% 0$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 1:%a%你太丑了，不听你哒~
 2:%a%主人~有人要霸占我！
 3:%a%不听不听，王八念经~
@@ -170,23 +172,23 @@ c:%%随机数1-7%%
 返回
 如果尾
 如果:%QQ%==3426709817
-$写 官网www.gylwj.club/%群号%/主人 %QQ% 1$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
-$写 官网www.gylwj.club/%群号%/主 d %列%|%QQ%$
+$写 官网www.imlwj.cn/%群号%/主人 %QQ% 1$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主 d %列%|%QQ%$
 $调用 0 %言%$
 返回
 如果尾
 如果:%QQ%==%主人%
-$写 官网www.gylwj.club/%群号%/主人 %QQ% 1$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
-$写 官网www.gylwj.club/%群号%/主 d %列%|%QQ%$
+$写 官网www.imlwj.cn/%群号%/主人 %QQ% 1$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主 d %列%|%QQ%$
 $调用 0 %言%$
 返回
 如果尾
 如果:%QQ%==$管理员 %QQ%$
-$写 官网www.gylwj.club/%群号%/主人 %QQ% 1$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
-$写 官网www.gylwj.club/%群号%/主 d %列%|%QQ%$
+$写 官网www.imlwj.cn/%群号%/主人 %QQ% 1$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主 d %列%|%QQ%$
 $调用 0 %言%$
 返回
 如果尾
@@ -213,7 +215,7 @@ c:%%随机数1-7%%
 %%随机数1-2%%
 
 [内部]!读违禁
-$读 官网www.gylwj.club/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+$读 官网www.imlwj.cn/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
 
 [系统]
 如果:%Status%==33
@@ -238,12 +240,12 @@ a:$回调 !K科技$
 %a%@%昵称%\n
 %a%欢迎入群请不要打小广告哦，否则就把你撕拉撕拉的,我主人的头像。
 ±img=https://q1.qlogo.cn/g?b=qq&nk=3194703513&s=640±
-私:您好，欢迎您新成员，有什么问题可以问我的主人，主人QQ:3194703513，主人的官网www.gylwj.club,http://gylwj.club主群群号1039713957
+私:您好，欢迎您新成员，有什么问题可以问我的主人，主人QQ:3194703513，主人的官网www.imlwj.cn,http://gylwj.club主群群号1039713957
 $发送 临时 msg %群号% %QQ% %私%$
 
 [内部]有人申请进群
-气:$读 官网www.gylwj.club/%群号%/$
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %QQ% 0$==1
+气:$读 官网www.imlwj.cn/%群号%/$
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %QQ% 0$==1
 $进群审核 %群号% %QQ% 31 12 你已在黑名单$
 %昵称%申请入群\n
 小k已拒绝！\n
@@ -277,7 +279,7 @@ C:你长得丑，吓到小k了
 $进群审核 %群号% %QQ% %A% %B% %C%$
 
 [上下管理]
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 如果:%Value%==1
 @$群昵称 %群号% %QQ%$
 ±at %QQ%±\n
@@ -296,20 +298,20 @@ $调用 0 !退群状态1$
 $调用 0 !退群状态2$
 
 [内部]!退群状态1
-气:$读 官网www.gylwj.club/%群号%/$
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %QQ% 0$==1
+气:$读 官网www.imlwj.cn/%群号%/$
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %QQ% 0$==1
 %QQ%退出了本群
 返回
 如果尾
 %QQ%退出了本群\n
 退了别回来，已拉黑！
-$写 官网www.gylwj.club/%群号%/黑名单 %QQ% 1$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
-$写 官网www.gylwj.club/%群号%/黑 d %列%|%QQ%$
+$写 官网www.imlwj.cn/%群号%/黑名单 %QQ% 1$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑 d %列%|%QQ%$
 
 [内部]!退群状态2
-气:$读 官网www.gylwj.club/%群号%/$
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %QQ% 0$==1
+气:$读 官网www.imlwj.cn/%群号%/$
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %QQ% 0$==1
 QQ：%Adminuin%将\n
 %QQ%踢出本群
 返回
@@ -317,16 +319,16 @@ QQ：%Adminuin%将\n
 QQ：%Adminuin%将\n
 %QQ%踢出本群\n
 已将%QQ%拉黑！
-$写 官网www.gylwj.club/%群号%/黑名单 %QQ% 1$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
-$写 官网www.gylwj.club/%群号%/黑 d %列%|%QQ%$
+$写 官网www.imlwj.cn/%群号%/黑名单 %QQ% 1$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑 d %列%|%QQ%$
 
 [撤回].*
-气:$读 官网www.gylwj.club/%群号%/$
-如果:$读 官网www.gylwj.club/%群号%/开关 a 0$==0
+气:$读 官网www.imlwj.cn/%群号%/$
+如果:$读 官网www.imlwj.cn/%群号%/开关 a 0$==0
 返回
 如果尾
-$写 官网www.gylwj.club/发言 %QQ% %参数0%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数0%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
 ±rep %Msgbar%±
@@ -334,36 +336,36 @@ a:$回调 !K科技$
 %a%%昵称%别撤回啦~\n
 %a%我都看见了：%参数-1%\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
 
 ([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/%QQ% Q 0$==%QQ%&$读 官网www.gylwj.club/%群号%/验证 %QQ% 0$==%括号1%&$读 官网www.gylwj.club/%群号%/%QQ% P 0$==%昵称%
+如果:$读 官网www.imlwj.cn/%群号%/%QQ% Q 0$==%QQ%&$读 官网www.imlwj.cn/%群号%/验证 %QQ% 0$==%括号1%&$读 官网www.imlwj.cn/%群号%/%QQ% P 0$==%昵称%
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%验证成功~\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
-$写 官网www.gylwj.club/%群号%/%QQ% Q 0$
-$写 官网www.gylwj.club/%群号%/验证 %QQ% 0$
-$写 官网www.gylwj.club/%群号%/%QQ% P 0$
-$写 官网www.gylwj.club/%群号%/%QQ% D 0$
-$写 官网www.gylwj.club/%群号%/验证完成 %QQ% 1$
+$写 官网www.imlwj.cn/%群号%/%QQ% Q 0$
+$写 官网www.imlwj.cn/%群号%/验证 %QQ% 0$
+$写 官网www.imlwj.cn/%群号%/%QQ% P 0$
+$写 官网www.imlwj.cn/%群号%/%QQ% D 0$
+$写 官网www.imlwj.cn/%群号%/验证完成 %QQ% 1$
 返回
 如果尾
 
 执行 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%QQ%==%主人%
@@ -371,7 +373,7 @@ $调用 0 !调用中转站$
 ±strmsg 作者QQ3194703513±
 %a%正在执行调试！
 q:%括号1%
-$写 官网www.gylwj.club/执行 %QQ% %q%$
+$写 官网www.imlwj.cn/执行 %QQ% %q%$
 $调用 1000 真执行$
 返回
 如果尾
@@ -380,16 +382,16 @@ $调用 1000 真执行$
 $回调 !非主人$
 
 [内部]真执行
-a:$读 官网www.gylwj.club/执行 %QQ% 0$
+a:$读 官网www.imlwj.cn/执行 %QQ% 0$
 $执行 %a%$
 
 菜单|功能|help|目录|系统
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 菜单 null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 菜单 null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{小K群管机器人}%a%\n
@@ -407,7 +409,7 @@ $调用 0 !调用中转站$
 %a%版本\n
 %a%切换\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -418,7 +420,7 @@ $回调 自定义菜单提示$
 配置切换
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 如果:%QQ%!=%主人%
 ±rep %Msgbar%±
 ±strmsg %参数-1%±
@@ -470,7 +472,7 @@ $调用 0 !调用中转站$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-%a%点击链接设置\r%2%\r--%a%官网www.gylwj.club\n
+%a%点击链接设置\r%2%\r--%a%官网www.imlwj.cn\n
 
 代挂
 ±img=http://q2.qlogo.cn/headimg_dl?dst_uin=%QQ%&spec=3±
@@ -495,12 +497,12 @@ DG支持的地区
 ±img=https://cdn.mc.huluxia.net/g4/M02/DE/7C/rBAAdl8kFZyAR4dEAAN7X5B_QVo800.png±
 
 秀图
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{秀图}%a%\n
@@ -513,7 +515,7 @@ $调用 0 !调用中转站$
 %a%6―随机\n
 %a%秀图[数字][带图]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -522,8 +524,8 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 秀图(0|1|2|3|4|5|6)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
 如果:%IMG0%==
@@ -541,8 +543,8 @@ a:$回调 !K科技$
 ±ximg %IMG0%±
 
 机器余额
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
 ±rep %Msgbar%±
@@ -559,18 +561,18 @@ A:$访问 SETGET {} http://jiuli.xiaoapi.cn/i/qq_qianbao.php?uin=%Robot%&skey=%S
 @A[msg]
 
 设置
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{设置}%a%\n
 %a%小尾巴\n
 %a%自定义\n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -579,19 +581,19 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 小尾巴
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{小尾巴}≯-\n
 %a%使用默认小尾巴\n
 %a%设置小尾巴 [内容]\n
 n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -600,12 +602,12 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 自定义
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{自定义}≯-\n
@@ -615,7 +617,7 @@ $调用 0 !调用中转站$
 (格式:text.json.XML)\n
 (例如:添加text你好 onmbk)\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -624,12 +626,12 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 词条
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{词条}%a%\n
@@ -639,7 +641,7 @@ $调用 0 !调用中转站$
 (格式:text.json.XML)\n
 (例如:添加text你好 恩好)\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -648,21 +650,21 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 删除词条 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/指令 %括号1% null$==null
+如果:$读 官网www.imlwj.cn/%群号%/指令 %括号1% null$==null
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%词条不存在"%括号1%"
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%成功删除"%括号1%"
-$写 官网www.gylwj.club/%群号%/指令 %括号1% null$
+$写 官网www.imlwj.cn/%群号%/指令 %括号1% null$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -670,22 +672,22 @@ $写 官网www.gylwj.club/%群号%/指令 %括号1% null$
 $回调 !非主人$
 
 (添加|修改)(text|json|XML)(.*) (.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:%括号1%==修改&$读 官网www.gylwj.club/%群号%/指令 %括号3% null$==null
+如果:%括号1%==修改&$读 官网www.imlwj.cn/%群号%/指令 %括号3% null$==null
 ±rep %Msgbar%±
 ±strmsg 词条%括号3%±
 %a%词条不存在%括号3%
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 词条%括号3%±
 %a%成功%括号1%%括号2%词条"%括号3%"
-$写 官网www.gylwj.club/%群号%/指令 %括号3% %括号4%$
-$写 官网www.gylwj.club/%群号%/自定义格式 %括号3% %括号2%$
+$写 官网www.imlwj.cn/%群号%/指令 %括号3% %括号4%$
+$写 官网www.imlwj.cn/%群号%/自定义格式 %括号3% %括号2%$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -693,38 +695,38 @@ $写 官网www.gylwj.club/%群号%/自定义格式 %括号3% %括号2%$
 $回调 !非主人$
 
 设置小尾巴 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-$写 官网www.gylwj.club/%群号%/尾巴 a %括号1%$
+$写 官网www.imlwj.cn/%群号%/尾巴 a %括号1%$
 %a%已设置尾巴%括号1%
 
 使用默认小尾巴
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-$写 官网www.gylwj.club/%群号%/尾巴 a 0あ$
+$写 官网www.imlwj.cn/%群号%/尾巴 a 0あ$
 %a%已使用一言尾巴
 
 [内部]自定义(.*)提示
-a:$读 官网www.gylwj.club/%群号%/自定义格式 %括号1% text$
-b:$读 官网www.gylwj.club/%群号%/指令 %括号1% null$
+a:$读 官网www.imlwj.cn/%群号%/自定义格式 %括号1% text$
+b:$读 官网www.imlwj.cn/%群号%/指令 %括号1% null$
 如果:%a%==text
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 %b%
 返回
 如果尾
@@ -736,15 +738,15 @@ card:1
 json:%b%
 
 恢复 ?(菜单|系统|目录|help|功能)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%成功恢复"%括号1%"
-$写 官网www.gylwj.club/%群号%/指令 菜单 null$
+$写 官网www.imlwj.cn/%群号%/指令 菜单 null$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -752,15 +754,15 @@ $写 官网www.gylwj.club/%群号%/指令 菜单 null$
 $回调 !非主人$
 
 恢复 ?(站长|秀图|音乐|影视|群管|工具|调试|设置|铃声|主人|白名|黑名|违禁|锁名|撤回|进退|基本)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%成功恢复"%括号1%"
-$写 官网www.gylwj.club/%群号%/指令 %括号1% null$
+$写 官网www.imlwj.cn/%群号%/指令 %括号1% null$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -768,16 +770,16 @@ $写 官网www.gylwj.club/%群号%/指令 %括号1% null$
 $回调 !非主人$
 
 自定义(text|XML|json)(菜单|系统|目录|help|功能) (.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 自定义%括号2%±
 %a%成功%括号1%自定义"%括号2%"
-$写 官网www.gylwj.club/%群号%/指令 菜单 %括号3%$
-$写 官网www.gylwj.club/%群号%/自定义格式 菜单 %括号1%$
+$写 官网www.imlwj.cn/%群号%/指令 菜单 %括号3%$
+$写 官网www.imlwj.cn/%群号%/自定义格式 菜单 %括号1%$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -785,16 +787,16 @@ $写 官网www.gylwj.club/%群号%/自定义格式 菜单 %括号1%$
 $回调 !非主人$
 
 自定义(text|XML|json)(站长|秀图|音乐|词条|影视|群管|工具|调试|设置|铃声|主人|白名|黑名|违禁|小尾巴|自定义|锁名|撤回|进退|基本) (.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 自定义%括号2%±
 %a%成功%括号1%自定义"%括号2%"
-$写 官网www.gylwj.club/%群号%/指令 %括号2% %括号3%$
-$写 官网www.gylwj.club/%群号%/自定义格式 %括号2% %括号1%$
+$写 官网www.imlwj.cn/%群号%/指令 %括号2% %括号3%$
+$写 官网www.imlwj.cn/%群号%/自定义格式 %括号2% %括号1%$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -802,12 +804,12 @@ $写 官网www.gylwj.club/%群号%/自定义格式 %括号2% %括号1%$
 $回调 !非主人$
 
 音乐
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{音乐}%a%\n
@@ -815,7 +817,7 @@ $调用 0 !调用中转站$
 %a%铃声\n
 %a%唱歌 [歌曲]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -907,32 +909,32 @@ card:1
 %A%
 
 唱歌 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 $访问 SETGET %访% https://api.xingzhige.com/API/cg/api.php?msg=%括号1%$\n
 发送:  唱[序号]
-$写 官网www.gylwj.club/唱歌/%QQ% so %括号1%$
+$写 官网www.imlwj.cn/唱歌/%QQ% so %括号1%$
 
 唱 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
-A:$读 官网www.gylwj.club/唱歌/%QQ% so 0$
+A:$读 官网www.imlwj.cn/唱歌/%QQ% so 0$
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 唱:$访问 SETGET %访% https://api.xingzhige.com/API/cg/api.php?msg=%A%&n=%括号1%$
 $发送 群 ptt %群号% -1 %唱%$
 
 影视
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{影视}%a%\n
@@ -941,7 +943,7 @@ $调用 0 !调用中转站$
 %a%美女\n
 %a%&福利\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1011,18 +1013,18 @@ $访问 http://xiaoapi.cn/api/jingxuanshipin.php?type=网红$
 $访问 http://xiaoapi.cn/api/jingxuanshipin.php?type=动物$
 
 影视 ?(.*)
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 M:https://z1.m1907.cn/?jx=%括号1%
 json:{"app":"com.tencent.structmsg","desc":"","view":"news","ver":"0.0.0.1","prompt":"[应用]视频","appID":"","sourceName":"","actionData":"","actionData_A":"","sourceUrl":"","meta":{"news":{"action":"","android_pkg_name":"com.tencent.mtt","app_type":1,"appid":100446242,"desc":"%昵称%，点击进入观看","jumpUrl":"%M%","preview":"http://gchat.qpic.cn/gchatpic_new/3318666086/530077417-1234567890-53814CB68D758396349E0EAB7FB118A4/0","source_icon":"url.cn\/5p4834M","source_url":"url.cn\/5bIsXpj","tag":"腾讯视频","title":"%括号1%"}},"text":"","sourceAd":""}
 
 铃声
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{铃声}%a%\n
@@ -1036,7 +1038,7 @@ $调用 0 !调用中转站$
 %a%来电\n
 %a%搜索 [铃声]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1143,32 +1145,32 @@ card:1
 如果尾
 
 搜索 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 A:$访问 SETGET %访% http://ilili.gjwa.cn/lsdd/api.php?msg=%括号1%$
 %A%\n提示:听[空格]数字
-$写 官网www.gylwj.club/搜索/%QQ% a %括号1%$
+$写 官网www.imlwj.cn/搜索/%QQ% a %括号1%$
 
 听 ([0-9]+)
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
-g:$读 官网www.gylwj.club/搜索/%QQ% a 0$
+g:$读 官网www.imlwj.cn/搜索/%QQ% a 0$
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 A:$访问 SETGET %访% http://ilili.gjwa.cn/lsdd/api.php?msg=%g%&n=%参数1%&r=xml$
 card:1
 %A%
 
 群管
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{群管}%a%\n
@@ -1181,7 +1183,7 @@ $调用 0 !调用中转站$
 %a%进退\n
 %a%基本\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1190,12 +1192,12 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 进退
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{进退}≯-\n
@@ -1203,7 +1205,7 @@ $调用 0 !调用中转站$
 %a%退出群 [群号]\n
 %a%申请群 [群号] [理由]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1212,8 +1214,8 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 申请群 ([0-9]+) (.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
 如果:%QQ%!=%主人%
@@ -1229,8 +1231,8 @@ $回调 !非主人$
 $申请群 %括号1% %括号2%$
 
 退出群 ([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
 如果:%QQ%!=%主人%
@@ -1245,8 +1247,8 @@ $退出群 %括号1%$
 %a%成功退出%括号1%群
 
 机器退群
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
 如果:%QQ%!=%主人%
@@ -1261,12 +1263,12 @@ $回调 !非主人$
 $退出群 %群号%$
 
 主人
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{主人}≯-\n
@@ -1276,7 +1278,7 @@ $调用 0 !调用中转站$
 %a%添加主人 [QQ]\n
 %a%删除主人 [QQ]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1285,20 +1287,20 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 主人列表
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-A:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
+A:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
 B:$替换 ф %A%ф|ф\n%a%QQ"$
 C:$替换 ф %B%ф主人列表ф$
 如果:%C%==
 -≮{主人列表}≯-\n
 %a%空空如也~\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1308,8 +1310,8 @@ $回调 !小尾巴$
 %C%
 
 添加主人@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1318,18 +1320,18 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %AT0% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %AT0% 0$==1
 %a%他已在主人列表
 返回
 如果尾
 %a%已添加%括号1%到主人列表
-$写 官网www.gylwj.club/%群号%/主人 %AT0% 1$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
-$写 官网www.gylwj.club/%群号%/主 d %列%|%AT0%$
+$写 官网www.imlwj.cn/%群号%/主人 %AT0% 1$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主 d %列%|%AT0%$
 
 删除主人@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1338,19 +1340,19 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %AT0% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %AT0% 0$==0
 %a%他不在主人列表
 返回
 如果尾
 %a%已解%AT0%主人身份
-$写 官网www.gylwj.club/%群号%/主人 %AT0% 0$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主人 %AT0% 0$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
 表:$替换 € %列%€|%AT0%€$
-$写 官网www.gylwj.club/%群号%/主 d %表%$
+$写 官网www.imlwj.cn/%群号%/主 d %表%$
 
 添加主人 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1359,18 +1361,18 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %括号1% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %括号1% 0$==1
 %a%他已在主人列表
 返回
 如果尾
 %a%已添加%括号1%主人
-$写 官网www.gylwj.club/%群号%/主人 %括号1% 1$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
-$写 官网www.gylwj.club/%群号%/主 d %列%|%括号1%$
+$写 官网www.imlwj.cn/%群号%/主人 %括号1% 1$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主 d %列%|%括号1%$
 
 删除主人 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1379,23 +1381,23 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %括号1% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %括号1% 0$==0
 %a%他不在主人列表
 返回
 如果尾
 %a%已解%括号1%主人身份
-$写 官网www.gylwj.club/%群号%/主人 %括号1% 0$
-列:$读 官网www.gylwj.club/%群号%/主 d 主人列表$
+$写 官网www.imlwj.cn/%群号%/主人 %括号1% 0$
+列:$读 官网www.imlwj.cn/%群号%/主 d 主人列表$
 表:$替换 € %列%€|%括号1%€$
-$写 官网www.gylwj.club/%群号%/主 d %表%$
+$写 官网www.imlwj.cn/%群号%/主 d %表%$
 
 违禁
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{违禁}≯-\n
@@ -1409,7 +1411,7 @@ $调用 0 !调用中转站$
 %a%设置禁言时间 [分钟]\n
 %a%设置警告次数 [次数]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1418,23 +1420,23 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 快速添加
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%你还在删除违禁词呢！\n
 %a%结束请发送"停止删除"
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已开启快速添加~\n
 %a%请发送删除的违禁词~\n
 %a%结束请发送"停止添加"
-$写 官网www.gylwj.club/%QQ%/违禁词快速加 Q 开$
+$写 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 开$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -1442,14 +1444,14 @@ $写 官网www.gylwj.club/%QQ%/违禁词快速加 Q 开$
 $回调 !非主人$
 
 停止添加
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已结束快速添加~
-$写 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$
+$写 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -1457,14 +1459,14 @@ $写 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$
 $回调 !非主人$
 
 停止删除
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已结束快速删除~
-$写 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$
+$写 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -1472,23 +1474,23 @@ $写 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$
 $回调 !非主人$
 
 快速删除
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%你还在添加违禁词呢！\n
 %a%结束请发送"停止添加"
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已开启快速删除~\n
 %a%请发送删除的违禁词~\n
 %a%结束请发送"停止删除"
-$写 官网www.gylwj.club/%QQ%/违禁词快速删 Q 开$
+$写 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 开$
 返回
 如果尾
 ±rep %Msgbar%±
@@ -1496,8 +1498,8 @@ $写 官网www.gylwj.club/%QQ%/违禁词快速删 Q 开$
 $回调 !非主人$
 
 添加违禁词 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%括号1%==傻逼|%括号1%==狗逼|%括号1%==刷钻|%括号1%==收徒|%括号1%==出售|%括号1%==扫码|%括号1%==龙斗虎|%括号1%==招工|%括号1%==日结|%括号1%==代刷|%括号1%==代唰|%括号1%==智障|%括号1%==麻痹|%括号1%==妈逼
@@ -1506,18 +1508,18 @@ $调用 0 !调用中转站$
 %a%违禁词"%括号1%"已存在系统
 返回
 如果尾
-如果:$读 官网www.gylwj.club/违禁词检验/%群号% %括号1% 0$==1
+如果:$读 官网www.imlwj.cn/违禁词检验/%群号% %括号1% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%当前违禁词已存在~
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-A:$读 官网www.gylwj.club/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
-$写 官网www.gylwj.club/%群号%/违禁词 Q %A%|%括号1%$
-毕:$读 官网www.gylwj.club/违禁词列表/%群号%/词 d 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
-$写 官网www.gylwj.club/违禁词列表/%群号%/词 d %毕%|%括号1%$
-$写 官网www.gylwj.club/违禁词检验/%群号% %括号1% 1$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+A:$读 官网www.imlwj.cn/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+$写 官网www.imlwj.cn/%群号%/违禁词 Q %A%|%括号1%$
+毕:$读 官网www.imlwj.cn/违禁词列表/%群号%/词 d 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+$写 官网www.imlwj.cn/违禁词列表/%群号%/词 d %毕%|%括号1%$
+$写 官网www.imlwj.cn/违禁词检验/%群号% %括号1% 1$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已添加违禁词%括号1%
@@ -1528,11 +1530,11 @@ $写 官网www.gylwj.club/违禁词检验/%群号% %括号1% 1$
 $回调 !非主人$
 
 清警告 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-$写 官网www.gylwj.club/违禁次数/%群号%/%括号1% a 0$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+$写 官网www.imlwj.cn/违禁次数/%群号%/%括号1% a 0$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
@@ -1544,11 +1546,11 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 清警告@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-$写 官网www.gylwj.club/违禁次数/%群号%/%AT0% a 0$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+$写 官网www.imlwj.cn/违禁次数/%群号%/%AT0% a 0$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
@@ -1560,8 +1562,8 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 删除违禁词 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%括号1%==傻逼|%括号1%==狗逼|%括号1%==刷钻|%括号1%==收徒|%括号1%==出售|%括号1%==扫码|%括号1%==龙斗虎|%括号1%==招工|%括号1%==日结|%括号1%==代刷|%括号1%==代唰|%括号1%==智障|%括号1%==麻痹|%括号1%==妈逼
@@ -1570,20 +1572,20 @@ $调用 0 !调用中转站$
 %a%系统违禁"%括号1%"无法删除
 返回
 如果尾
-如果:$读 官网www.gylwj.club/违禁词检验/%群号% %括号1% 0$==0
+如果:$读 官网www.imlwj.cn/违禁词检验/%群号% %括号1% 0$==0
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%没有该违禁词~
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-A:$读 官网www.gylwj.club/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+A:$读 官网www.imlwj.cn/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
 N:$替换 € %A%€|%括号1%€$
-$写 官网www.gylwj.club/%群号%/违禁词 Q %N%$
-k:$读 官网www.gylwj.club/违禁词列表/%群号%/词 d 违禁列表$
+$写 官网www.imlwj.cn/%群号%/违禁词 Q %N%$
+k:$读 官网www.imlwj.cn/违禁词列表/%群号%/词 d 违禁列表$
 m:$替换 € %k%€|%括号1%€$
-$写 官网www.gylwj.club/违禁词列表/%群号%/词 d %m%$
-$写 官网www.gylwj.club/违禁词检验/%群号% %括号1% 0$
+$写 官网www.imlwj.cn/违禁词列表/%群号%/词 d %m%$
+$写 官网www.imlwj.cn/违禁词检验/%群号% %括号1% 0$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已删除违禁词%括号1%
@@ -1594,23 +1596,23 @@ $写 官网www.gylwj.club/违禁词检验/%群号% %括号1% 0$
 $回调 !非主人$
 
 违禁词列表
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-e:$读 官网www.gylwj.club/违禁词列表/%群号%/词 d 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+e:$读 官网www.imlwj.cn/违禁词列表/%群号%/词 d 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
 f:$替换 ф %e%ф|ф|$
 -≮{违禁词列表}≯-\n
 %f%
 
 设置禁言时间 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-$写 官网www.gylwj.club/禁言时间/%群号% a %括号1%$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+$写 官网www.imlwj.cn/禁言时间/%群号% a %括号1%$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已设置违禁禁言%括号1%分钟
@@ -1621,12 +1623,12 @@ $写 官网www.gylwj.club/禁言时间/%群号% a %括号1%$
 $回调 !非主人$
 
 设置警告次数 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-$写 官网www.gylwj.club/设置次数/%群号% a %括号1%$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+$写 官网www.imlwj.cn/设置次数/%群号% a %括号1%$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%已设置警告%括号1%次拉黑踢出
@@ -1637,12 +1639,12 @@ $写 官网www.gylwj.club/设置次数/%群号% a %括号1%$
 $回调 !非主人$
 
 基本
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{基本}≯-\n
@@ -1655,7 +1657,7 @@ $调用 0 !调用中转站$
 %a%禁@* [分钟]\n
 %a%禁 [QQ] [分钟]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1664,10 +1666,10 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 禁全体
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 $全体禁言 开 %群号%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1680,10 +1682,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 解全体
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 $全体禁言 关 %群号%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1696,10 +1698,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 禁@.* ([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 A:[%括号1%*60]
 $禁 %群号% %AT0% %A%$
 $调用 0 !调用中转站$
@@ -1713,10 +1715,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 解@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 $禁 %群号% %AT0% 0$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1729,10 +1731,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 踢@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 $踢 %群号% %AT0%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1745,10 +1747,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 禁 ?([0-9]+) ([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 A:[%括号2%*60]
 $禁 %群号% %括号1% %A%$
 $调用 0 !调用中转站$
@@ -1762,10 +1764,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 解 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 $禁 %群号% %括号1% 0$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1778,10 +1780,10 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 踢 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 $踢 %群号% %括号1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -1794,12 +1796,12 @@ $调用 0 !调用中转站$
 $回调 !非主人$
 
 白名
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{白名}≯-\n
@@ -1809,7 +1811,7 @@ $调用 0 !调用中转站$
 %a%拉白 [QQ]\n
 %a%解白 [QQ]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1818,102 +1820,102 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 拉白 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/白名单 %括号1% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/白名单 %括号1% 0$==1
 %a%他已是白名！
 返回
 如果尾
 %a%已添加%括号1%为白名
-$写 官网www.gylwj.club/%群号%/白名单 %括号1% 1$
-列:$读 官网www.gylwj.club/%群号%/白 d 白名列表$
-$写 官网www.gylwj.club/%群号%/白 d %列%|%括号1%$
+$写 官网www.imlwj.cn/%群号%/白名单 %括号1% 1$
+列:$读 官网www.imlwj.cn/%群号%/白 d 白名列表$
+$写 官网www.imlwj.cn/%群号%/白 d %列%|%括号1%$
 
 解白 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/白名单 %括号1% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/白名单 %括号1% 0$==0
 %a%他不是白名呀！
 返回
 如果尾
 %a%已解%括号1%白名
-$写 官网www.gylwj.club/%群号%/白名单 %括号1% 0$
-列:$读 官网www.gylwj.club/%群号%/白 d 白名列表$
+$写 官网www.imlwj.cn/%群号%/白名单 %括号1% 0$
+列:$读 官网www.imlwj.cn/%群号%/白 d 白名列表$
 表:$替换 € %列%€|%括号1%€$
-$写 官网www.gylwj.club/%群号%/白 d %表%$
+$写 官网www.imlwj.cn/%群号%/白 d %表%$
 
 拉白@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/白名单 %AT0% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/白名单 %AT0% 0$==1
 %a%他已是白名！
 返回
 如果尾
 %a%已添加%AT0%为白名
-$写 官网www.gylwj.club/%群号%/白名单 %AT0% 1$
-列:$读 官网www.gylwj.club/%群号%/白 d 白名列表$
-$写 官网www.gylwj.club/%群号%/白 d %列%|%AT0%$
+$写 官网www.imlwj.cn/%群号%/白名单 %AT0% 1$
+列:$读 官网www.imlwj.cn/%群号%/白 d 白名列表$
+$写 官网www.imlwj.cn/%群号%/白 d %列%|%AT0%$
 
 解白@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/白名单 %AT0% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/白名单 %AT0% 0$==0
 %a%他不是白名呀！
 返回
 如果尾
 %a%已解%AT0%白名
-$写 官网www.gylwj.club/%群号%/白名单 %AT0% 0$
-列:$读 官网www.gylwj.club/%群号%/白 d 白名列表$
+$写 官网www.imlwj.cn/%群号%/白名单 %AT0% 0$
+列:$读 官网www.imlwj.cn/%群号%/白 d 白名列表$
 表:$替换 € %列%€|%AT0%€$
-$写 官网www.gylwj.club/%群号%/白 d %表%$
+$写 官网www.imlwj.cn/%群号%/白 d %表%$
 
 白名列表
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-A:$读 官网www.gylwj.club/%群号%/白 d 白名列表$
+A:$读 官网www.imlwj.cn/%群号%/白 d 白名列表$
 B:$替换 ф %A%ф|ф\n%a%QQ"$
 C:$替换 ф %B%ф白名列表ф$
 如果:%C%==
 -≮{白名列表}≯-\n
 %a%空空如也~\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1923,12 +1925,12 @@ $回调 !小尾巴$
 %C%
 
 黑名
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{黑名}≯-\n
@@ -1938,7 +1940,7 @@ $调用 0 !调用中转站$
 %a%拉黑 [QQ]\n
 %a%解黑 [QQ]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -1947,104 +1949,104 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 拉黑 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %括号1% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %括号1% 0$==1
 %a%他已是黑名！
 返回
 如果尾
 %a%已拉黑并踢出%括号1%
-$写 官网www.gylwj.club/%群号%/黑名单 %括号1% 1$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
-$写 官网www.gylwj.club/%群号%/黑 d %列%|%括号1%$
+$写 官网www.imlwj.cn/%群号%/黑名单 %括号1% 1$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑 d %列%|%括号1%$
 $踢 %群号% %括号1%$
 
 解黑 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %括号1% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %括号1% 0$==0
 %a%他不是黑名呀！
 返回
 如果尾
 %a%已解%括号1%黑名
-$写 官网www.gylwj.club/%群号%/黑名单 %括号1% 0$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑名单 %括号1% 0$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
 表:$替换 € %列%€|%括号1%€$
-$写 官网www.gylwj.club/%群号%/黑 d %表%$
+$写 官网www.imlwj.cn/%群号%/黑 d %表%$
 
 拉黑@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %AT0% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %AT0% 0$==1
 %a%他已是黑名！
 返回
 如果尾
 %a%已拉黑并踢出%AT0%
-$写 官网www.gylwj.club/%群号%/黑名单 %AT0% 1$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
-$写 官网www.gylwj.club/%群号%/黑 d %列%|%AT0%$
+$写 官网www.imlwj.cn/%群号%/黑名单 %AT0% 1$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑 d %列%|%AT0%$
 $踢 %群号% %AT0%$
 
 解黑@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/黑名单 %AT0% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/黑名单 %AT0% 0$==0
 %a%他不是黑名呀！
 返回
 如果尾
 %a%已解%AT0%黑名
-$写 官网www.gylwj.club/%群号%/黑名单 %AT0% 0$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑名单 %AT0% 0$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
 表:$替换 € %列%€|%AT0%€$
-$写 官网www.gylwj.club/%群号%/黑 d %表%$
+$写 官网www.imlwj.cn/%群号%/黑 d %表%$
 
 黑名列表
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-A:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
+A:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
 B:$替换 ф %A%ф|ф\n%a%QQ"$
 C:$替换 ф %B%ф黑名列表ф$
 如果:%C%==
 -≮{黑名列表}≯-\n
 %a%空空如也~\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2054,12 +2056,12 @@ $回调 !小尾巴$
 %C%
 
 锁名
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{锁名}≯-\n
@@ -2067,7 +2069,7 @@ $调用 0 !调用中转站$
 %a%锁名列表\n
 %a%锁名@* [内容]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2076,23 +2078,23 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 锁名@(.*) (.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 情:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 A:$群昵称 %群号% %AT0%$
-如果:$读 官网www.gylwj.club/改名限制/%群号% %AT0% 0$==1
+如果:$读 官网www.imlwj.cn/改名限制/%群号% %AT0% 0$==1
 %情%他已经在锁名列表啦~
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
-$写 官网www.gylwj.club/改名限制/%群号% %AT0% 1$
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
+$写 官网www.imlwj.cn/改名限制/%群号% %AT0% 1$
 $改 %群号% %AT0% %括号2%$
-列:$读 官网www.gylwj.club/%群号%/锁 d 锁名列表$
-$写 官网www.gylwj.club/%群号%/锁 d %列%|%AT0%-%括号2%$
-$写 官网www.gylwj.club/锁名记录/%群号% %AT0% %括号2%$
+列:$读 官网www.imlwj.cn/%群号%/锁 d 锁名列表$
+$写 官网www.imlwj.cn/%群号%/锁 d %列%|%AT0%-%括号2%$
+$写 官网www.imlwj.cn/锁名记录/%群号% %AT0% %括号2%$
 %情%用户:%A%\n
 %情%已强制锁名:%括号2%
 返回
@@ -2102,20 +2104,20 @@ $写 官网www.gylwj.club/锁名记录/%群号% %AT0% %括号2%$
 $回调 !非主人$
 
 锁名列表
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-A:$读 官网www.gylwj.club/%群号%/锁 d 锁名列表$
+A:$读 官网www.imlwj.cn/%群号%/锁 d 锁名列表$
 B:$替换 ф %A%ф|ф\n%a%$
 C:$替换 ф %B%ф锁名列表ф$
 如果:%C%==
 -≮{锁名列表}≯-\n
 %a%空空如也~\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2125,22 +2127,22 @@ $回调 !小尾巴$
 %C%
 
 解锁@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 情:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/改名限制/%群号% %AT0% 0$==0
+如果:$读 官网www.imlwj.cn/改名限制/%群号% %AT0% 0$==0
 %情%他没有被锁喔⊙ω⊙
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==1
 A:$群昵称 %群号% %AT0%$
-$写 官网www.gylwj.club/改名限制/%群号% %AT0% 0$
-列:$读 官网www.gylwj.club/%群号%/锁 d 锁名列表$
+$写 官网www.imlwj.cn/改名限制/%群号% %AT0% 0$
+列:$读 官网www.imlwj.cn/%群号%/锁 d 锁名列表$
 表:$替换 € %列%€|%AT0%-%A%€$
-$写 官网www.gylwj.club/%群号%/锁 d %表%$
+$写 官网www.imlwj.cn/%群号%/锁 d %表%$
 %情%用户:%A%\n
 %情%已被解除锁名
 返回
@@ -2150,12 +2152,12 @@ $写 官网www.gylwj.club/%群号%/锁 d %表%$
 $回调 !非主人$
 
 调试
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{调试}%a%\n
@@ -2163,7 +2165,7 @@ $调用 0 !调用中转站$
 %a%复读 [卡片]\n
 %a%执行 [变量]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2172,12 +2174,12 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 工具
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%{工具}%a%\n
@@ -2190,7 +2192,7 @@ $调用 0 !调用中转站$
 %a%空间\n
 %a%应用搜索\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2232,11 +2234,11 @@ $调用 0 !调用中转站$
 $访问 http://xiaoapi.cn/api/nl.php$
 
 天气
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
-$读 官网www.gylwj.club/%群号%$
+$读 官网www.imlwj.cn/%群号%$
 ±rep %Msgbar%±
 ±strmsg ≮作者QQ3194703513≯±
 %a%卡片天气\n
@@ -2259,12 +2261,12 @@ a:$访问 http://xiaoapi.cn/api/baidutq.php?msg=%参数1%$
 
 
 站长
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{站长}≯-\n
@@ -2280,7 +2282,7 @@ $调用 0 !调用中转站$
 %a%2ping [网址]\n
 %a%2sping [网址]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2303,67 +2305,67 @@ a:$访问 http://xiaoapi.cn/api/ping1.php?msg=%参数1%$
 %a%
 
 备案 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 $访问 https://xiaojieapi.cn/API/robot.php?msg=备案查询%括号1%$
 
 域名 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 $访问 https://xiaojieapi.cn/API/robot.php?msg=域名信息%括号1%$
 
 权重 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 $访问 https://xiaojieapi.cn/API/robot.php?msg=权重查询%括号1%$
 
 端口 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 $访问 https://xiaojieapi.cn/API/robot.php?msg=端口扫描%括号1%$
 
 卡片天气
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 json:{"app":"com.tencent.weather","desc":"天气","view":"RichInfoView","ver":"0.0.0.1","prompt":"[应用]天气","meta":{"richinfo":{"min":"  ","type":"","city":"","max":""}},"config":{"type":"card","forward":1,"autosize":1}}
 
 ping ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 $访问 https://xiaojieapi.cn/API/robot.php?msg=ping%括号1%$
 
 sping ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 $访问 https://xiaojieapi.cn/API/robot.php?msg=sping%括号1%$
 
 定位 ?(.*)
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 $访问 SETGET %访% http://yanxi1314.qq-v.xyz/kp/dw.php?ip=%括号1%$
 
 扒站 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -2377,8 +2379,8 @@ $调用 0 !调用中转站$
 %a%源码：@测[url]
 
 收录 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -2386,8 +2388,8 @@ $调用 0 !调用中转站$
 $访问 https://xiaojieapi.cn/API/robot.php?msg=收录查询%括号1%$
 
 图转链
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
@@ -2406,46 +2408,46 @@ b:$替换 Э %b%Э}Э$
 http://gchat.qpic.cn/gchatpic_new/3318666086/530077417-1234567890-%b%/0
 
 访问 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-$写 官网www.gylwj.club/访问发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/访问发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%正在获取站点资源~
-$写 官网www.gylwj.club/科技/访问数据 a %括号1%$
+$写 官网www.imlwj.cn/科技/访问数据 a %括号1%$
 $调用 0 !数据$
 
 [内部]!数据
-a:$读 官网www.gylwj.club/科技/访问数据 a 0$
+a:$读 官网www.imlwj.cn/科技/访问数据 a 0$
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 $访问 SETGET %访% %a%$
 
 转卡 ?(.*)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% 转卡*$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% 转卡*$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 转卡*±
 %a%正在寻找复读方式
-$写 官网www.gylwj.club/复读/复读模式%群号% a %括号1%$
+$写 官网www.imlwj.cn/复读/复读模式%群号% a %括号1%$
 $调用 0 !UTF$
 
 [内部]!UTF
-a:$读 官网www.gylwj.club/复读/复读模式%群号% a 0$
+a:$读 官网www.imlwj.cn/复读/复读模式%群号% a 0$
 card:1
 %a%
 $调用 0 !JSON$
 
 [内部]!JSON
-a:$读 官网www.gylwj.club/复读/复读模式%群号% a 0$
+a:$读 官网www.imlwj.cn/复读/复读模式%群号% a 0$
 json:
 %a%
 
 搜图 ?(.*)
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 访:{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; vivo Y55L Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/045132 Mobile Safari/537.36 V1_AND_SQ_8.3.3_1376_YYB_D QQ/8.3.3.4515 NetType/WIFI WebP/0.3.0 Pixel/720 StatusBarHeight/49 SimpleUISwitch/0 QQTheme/1000"}
 B:$访问 SETGET %访% http://sqv7plus.top/jie/soutu.php?msg=%括号1%$
@@ -2453,12 +2455,12 @@ card:1
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?><msg serviceID="108" templateID="1" action="web"  brief="[应用]分享" sourcePublicUin="2747277822" sourceMsgId="0" url="https://youxi.vip.qq.com/m/act" flag="0" adverSign="0" multiMsgFlag="0"><item layout="2" advertiser_id="0" aid="0"><picture cover="%B%" w="0" h="0" /><title>%括号1%图片</title><summary>↓↓点击下面的文字查看图片↓↓</summary></item><source name="→→点击这里可以查看←←" icon="" url="%B%?tag=1-1575964637-h-0-g0expapphp-75e7eacd84d178f7" action="web" appid="-1" /></msg>
 
 撤回
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
-运:$读 官网www.gylwj.club/%群号%/指令 %参数-1% null$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
+运:$读 官网www.imlwj.cn/%群号%/指令 %参数-1% null$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%运%==null
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 -≮{撤回}≯-\n
@@ -2470,7 +2472,7 @@ $调用 0 !调用中转站$
 %a%发言撤回 [QQ]\n
 %a%取消撤回 [QQ]\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2479,20 +2481,20 @@ $回调 !小尾巴$
 $回调 自定义%参数-1%提示$
 
 撤回列表
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-A:$读 官网www.gylwj.club/%群号%/撤 d 撤回列表$
+A:$读 官网www.imlwj.cn/%群号%/撤 d 撤回列表$
 B:$替换 ф %A%ф|ф\n%a%QQ"$
 C:$替换 ф %B%ф撤回列表ф$
 如果:%C%==
 -≮{撤回列表}≯-\n
 %a%空空如也~\n
 \n
-{官网http://gylwj.9gz.xyz/TX}\n
+{官网www.imlwj.cn}\n
 [%时间yyyy%.%时间MM%.%时间dd%.%时间cc%;%时间HH%:%时间mm%]\n
 ━━━━━━━━━━━\n
 $回调 !小尾巴$
@@ -2502,170 +2504,170 @@ $回调 !小尾巴$
 %C%
 
 发言撤回@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/撤回开关 %AT0% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/撤回开关 %AT0% 0$==1
 %a%他已在撤回列表
 返回
 如果尾
 %a%已添加%括号1%到撤回列表
-$写 官网www.gylwj.club/%群号%/撤回开关 %AT0% 1$
-列:$读 官网www.gylwj.club/%群号%/撤 d 撤回列表$
-$写 官网www.gylwj.club/%群号%/撤 d %列%|%AT0%$
+$写 官网www.imlwj.cn/%群号%/撤回开关 %AT0% 1$
+列:$读 官网www.imlwj.cn/%群号%/撤 d 撤回列表$
+$写 官网www.imlwj.cn/%群号%/撤 d %列%|%AT0%$
 
 取消撤回@.*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/撤回开关 %AT0% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/撤回开关 %AT0% 0$==0
 %a%他不在撤回列表
 返回
 如果尾
 %a%已解%AT0%撤回
-$写 官网www.gylwj.club/%群号%/撤回开关 %AT0% 0$
-列:$读 官网www.gylwj.club/%群号%/撤 d 撤回列表$
+$写 官网www.imlwj.cn/%群号%/撤回开关 %AT0% 0$
+列:$读 官网www.imlwj.cn/%群号%/撤 d 撤回列表$
 表:$替换 € %列%€|%AT0%€$
-$写 官网www.gylwj.club/%群号%/撤 d %表%$
+$写 官网www.imlwj.cn/%群号%/撤 d %表%$
 
 发言撤回 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/撤回开关 %括号1% 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/撤回开关 %括号1% 0$==1
 %a%他已在撤回列表
 返回
 如果尾
 %a%已添加%括号1%到撤回列表
-$写 官网www.gylwj.club/%群号%/撤回开关 %括号1% 1$
-列:$读 官网www.gylwj.club/%群号%/撤 d 撤回列表$
-$写 官网www.gylwj.club/%群号%/撤 d %列%|%括号1%$
+$写 官网www.imlwj.cn/%群号%/撤回开关 %括号1% 1$
+列:$读 官网www.imlwj.cn/%群号%/撤 d 撤回列表$
+$写 官网www.imlwj.cn/%群号%/撤 d %列%|%括号1%$
 
 取消撤回 ?([0-9]+)
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/撤回开关 %括号1% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/撤回开关 %括号1% 0$==0
 %a%他不在撤回列表
 返回
 如果尾
 %a%已解%括号1%撤回
-$写 官网www.gylwj.club/%群号%/撤回开关 %括号1% 0$
-列:$读 官网www.gylwj.club/%群号%/撤 d 撤回列表$
+$写 官网www.imlwj.cn/%群号%/撤回开关 %括号1% 0$
+列:$读 官网www.imlwj.cn/%群号%/撤 d 撤回列表$
 表:$替换 € %列%€|%括号1%€$
-$写 官网www.gylwj.club/%群号%/撤 d %表%$
+$写 官网www.imlwj.cn/%群号%/撤 d %表%$
 
 开防撤
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/开关 a 0$==1
+如果:$读 官网www.imlwj.cn/%群号%/开关 a 0$==1
 %a%早就开撤回查询了~
 返回
 如果尾
 %a%撤回查询已开~
-$写 官网www.gylwj.club/%群号%/开关 a 1$
+$写 官网www.imlwj.cn/%群号%/开关 a 1$
 
 关防撤
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-如果:$读 官网www.gylwj.club/%群号%/主人 %QQ% 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/主人 %QQ% 0$==0
 $回调 !非主人$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/开关 a 0$==0
+如果:$读 官网www.imlwj.cn/%群号%/开关 a 0$==0
 %a%根本没开撤回查询~
 返回
 如果尾
 %a%撤回查询已关~
-$写 官网www.gylwj.club/%群号%/开关 a 0$
+$写 官网www.imlwj.cn/%群号%/开关 a 0$
 
 解析
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
-$读 官网www.gylwj.club/卡片数据/数据%群号% a 0$
+$读 官网www.imlwj.cn/卡片数据/数据%群号% a 0$
 
 (?i)[\s\S]*($回调内部 !读违禁$)[\s\S]*
-气:$读 官网www.gylwj.club/%群号%/$
+气:$读 官网www.imlwj.cn/%群号%/$
 a:$回调 !K科技$
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&$读 官网www.gylwj.club/违禁词检验/%群号% %参数-1% 0$==1
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&$读 官网www.imlwj.cn/违禁词检验/%群号% %参数-1% 0$==1
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%该违禁词已存在！
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==傻逼|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==狗逼|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==刷钻|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==收徒|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==出售|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==扫码|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==龙斗虎|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==招工|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==日结|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==代刷|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==代唰|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==智障|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==麻痹|$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==妈逼
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==傻逼|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==狗逼|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==刷钻|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==收徒|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==出售|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==扫码|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==龙斗虎|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==招工|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==日结|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==代刷|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==代唰|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==智障|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==麻痹|$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开&%参数-1%==妈逼
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%系统违禁词禁止操作
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==傻逼|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==狗逼|%参数-1%==刷钻|%参数-1%==收徒|%参数-1%==出售|%参数-1%==扫码|%参数-1%==龙斗虎|%参数-1%==招工|%参数-1%==日结|%参数-1%==代刷|%参数-1%==代唰|%参数-1%==智障|%参数-1%==麻痹|%参数-1%==妈逼
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==傻逼|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==狗逼|%参数-1%==刷钻|%参数-1%==收徒|%参数-1%==出售|%参数-1%==扫码|%参数-1%==龙斗虎|%参数-1%==招工|%参数-1%==日结|%参数-1%==代刷|%参数-1%==代唰|%参数-1%==智障|%参数-1%==麻痹|%参数-1%==妈逼
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%系统违禁词禁止操作
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==傻逼|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==狗逼|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==刷钻|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==收徒|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==出售|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==扫码|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==龙斗虎|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==招工|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==日结|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==代刷|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==代唰|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==智障|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==麻痹|$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==妈逼
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==傻逼|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==狗逼|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==刷钻|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==收徒|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==出售|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==扫码|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==龙斗虎|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==招工|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==日结|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==代刷|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==代唰|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==智障|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==麻痹|$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&%参数-1%==妈逼
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%成功删除违禁词"%参数-1%"
-A:$读 官网www.gylwj.club/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+A:$读 官网www.imlwj.cn/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
 N:$替换 € %A%€|%参数-1%€$
-$写 官网www.gylwj.club/%群号%/违禁词 Q %N%$
-k:$读 官网www.gylwj.club/违禁词列表/%群号%/词 d 违禁列表$
+$写 官网www.imlwj.cn/%群号%/违禁词 Q %N%$
+k:$读 官网www.imlwj.cn/违禁词列表/%群号%/词 d 违禁列表$
 m:$替换 € %k%€|%参数-1%€$
-$写 官网www.gylwj.club/违禁词列表/%群号%/词 d %m%$
-$写 官网www.gylwj.club/违禁词检验/%群号% %参数-1% 0$
-$写 官网www.gylwj.club/发言 %QQ% %参数-1%$
+$写 官网www.imlwj.cn/违禁词列表/%群号%/词 d %m%$
+$写 官网www.imlwj.cn/违禁词检验/%群号% %参数-1% 0$
+$写 官网www.imlwj.cn/发言 %QQ% %参数-1%$
 $调用 0 !调用中转站$
 返回
 如果尾
@@ -2675,25 +2677,25 @@ $调用 0 !调用中转站$
 如果:%括号1%==空
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/白名单 %QQ% 0$==1
-$写 官网www.gylwj.club/发言 %QQ% 违禁词%括号1%$
+如果:$读 官网www.imlwj.cn/%群号%/白名单 %QQ% 0$==1
+$写 官网www.imlwj.cn/发言 %QQ% 违禁词%括号1%$
 $调用 0 !调用中转站$
 返回
 如果尾
-$写 官网www.gylwj.club/发言 %QQ% 违禁词%括号1%$
+$写 官网www.imlwj.cn/发言 %QQ% 违禁词%括号1%$
 $调用 0 !调用中转站$
-罚:$读 官网www.gylwj.club/禁言时间/%群号% a 10$
-设:$读 官网www.gylwj.club/设置次数/%群号% a 3$
-个:$读 官网www.gylwj.club/违禁次数/%群号%/%QQ% a 0$
+罚:$读 官网www.imlwj.cn/禁言时间/%群号% a 10$
+设:$读 官网www.imlwj.cn/设置次数/%群号% a 3$
+个:$读 官网www.imlwj.cn/违禁次数/%群号%/%QQ% a 0$
 啦:[%设%-1]
 如果:%啦%<=%个%
 ±rep %Msgbar%±
 ±strmsg 违禁词%括号1%±
 %a%你已违禁%设%次，已拉黑并踢出！
-$写 官网www.gylwj.club/%群号%/黑名单 %QQ% 1$
-列:$读 官网www.gylwj.club/%群号%/黑 d 黑名列表$
-$写 官网www.gylwj.club/%群号%/黑 d %列%|%QQ%$
-$写 官网www.gylwj.club/违禁次数/%群号%/%QQ% a [%个%+1]$
+$写 官网www.imlwj.cn/%群号%/黑名单 %QQ% 1$
+列:$读 官网www.imlwj.cn/%群号%/黑 d 黑名列表$
+$写 官网www.imlwj.cn/%群号%/黑 d %列%|%QQ%$
+$写 官网www.imlwj.cn/违禁次数/%群号%/%QQ% a [%个%+1]$
 $踢 %群号% %QQ%$
 $撤回 %群号% %Msgbar%$
 返回
@@ -2704,11 +2706,11 @@ $撤回 %群号% %Msgbar%$
 A:[60*%罚%]
 $禁 %群号% %QQ% %A%$
 $撤回 %群号% %Msgbar%$
-$写 官网www.gylwj.club/违禁次数/%群号%/%QQ% a [%个%+1]$
+$写 官网www.imlwj.cn/违禁次数/%群号%/%QQ% a [%个%+1]$
 
 [高级].*
-气:$读 官网www.gylwj.club/%群号%/$
-$写 官网www.gylwj.club/发言 %QQ% %参数0%$
+气:$读 官网www.imlwj.cn/%群号%/$
+$写 官网www.imlwj.cn/发言 %QQ% %参数0%$
 a:$回调 !K科技$
 $调用 0 !调用中转站$
 如果:%XML0%!=
@@ -2716,7 +2718,7 @@ $调用 0 !调用中转站$
 ±strmsg XML卡片±
 %QQ%发送卡片\n
 %a%是否"解析"？
-$写 官网www.gylwj.club/卡片数据/数据%群号% a %XML0%$
+$写 官网www.imlwj.cn/卡片数据/数据%群号% a %XML0%$
 返回
 如果尾
 如果:%JSON0%!=
@@ -2724,7 +2726,7 @@ $写 官网www.gylwj.club/卡片数据/数据%群号% a %XML0%$
 ±strmsg json卡片±
 %QQ%发送卡片\n
 %a%是否"解析"？
-$写 官网www.gylwj.club/卡片数据/数据%群号% a %JSON0%$
+$写 官网www.imlwj.cn/卡片数据/数据%群号% a %JSON0%$
 返回
 如果尾
 如果:%FIMG0%!=
@@ -2736,22 +2738,22 @@ $写 官网www.gylwj.club/卡片数据/数据%群号% a %JSON0%$
 ±img=%闪%±
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%群号%/指令 %参数0% null$!=null
+如果:$读 官网www.imlwj.cn/%群号%/指令 %参数0% null$!=null
 $回调 自定义%参数0%提示$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速加 Q 关$==开
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速加 Q 关$==开
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%成功添加违禁词"%参数-1%"
-A:$读 官网www.gylwj.club/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
-$写 官网www.gylwj.club/%群号%/违禁词 Q %A%|%参数-1%$
-毕:$读 官网www.gylwj.club/违禁词列表/%群号%/词 d 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
-$写 官网www.gylwj.club/违禁词列表/%群号%/词 d %毕%|%参数-1%$
-$写 官网www.gylwj.club/违禁词检验/%群号% %参数-1% 1$
+A:$读 官网www.imlwj.cn/%群号%/违禁词 Q 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+$写 官网www.imlwj.cn/%群号%/违禁词 Q %A%|%参数-1%$
+毕:$读 官网www.imlwj.cn/违禁词列表/%群号%/词 d 刷钻|收徒|出售|扫码|龙虎斗|招工|日结|代刷|代唰|傻逼|狗逼|智障|麻痹|妈逼|逼|傻逼群主|憨憨群主|sb|SB|沙币|傻不拉叽|jb$
+$写 官网www.imlwj.cn/违禁词列表/%群号%/词 d %毕%|%参数-1%$
+$写 官网www.imlwj.cn/违禁词检验/%群号% %参数-1% 1$
 返回
 如果尾
-如果:$读 官网www.gylwj.club/%QQ%/违禁词快速删 Q 关$==开&$读 官网www.gylwj.club/违禁词检验/%群号% %参数-1% 0$==0
+如果:$读 官网www.imlwj.cn/%QQ%/违禁词快速删 Q 关$==开&$读 官网www.imlwj.cn/违禁词检验/%群号% %参数-1% 0$==0
 ±rep %Msgbar%±
 ±strmsg 作者QQ3194703513±
 %a%该违禁词不存在！
