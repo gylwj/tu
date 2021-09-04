@@ -1,2 +1,2 @@
 # tu
-cdn=https://cdn.jsdelivr.net/gh/gylwj/tu@master/文件名字
+cdn=https://cdn.jsdelivr.net/gh/注册昵称/仓库昵称@master/文件名字
